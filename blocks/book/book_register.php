@@ -47,5 +47,5 @@
 'book_cover_link' => array('post_id' => 0, 'url' => '#void', 'post_type' => '', 'title' => ''), 'book_size' => 'big', 'back_cover_text' => 'Comprar', 'back_cover_icon_type' => 'download', 'back_cover_color' => '', 'back_cover_bkg_color' => '', 'book_cover_img' => array('id' => 0, 'url' => esc_url( cover3d_plugin_base_url() . '/assets/cover.png' ), 'size' => '', 'svg' => '', 'alt' => null)
             ),
             'dynamic' => true,
-            'version' => '0.1.95'
+            'version' => '0.1.0'
         ) );

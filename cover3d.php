@@ -1,9 +1,9 @@
 <?php
 /**
- * Plugin Name:       3D Cover
+ * Plugin Name:       Cover3D
  * Plugin URI:        https://example.com/plugins/the-basics/
  * Description:       Describe what the plugin does.
- * Version: 0.1.95
+ * Version: 0.1.0
  * Requires at least: 5.5
  * Requires PHP:      5.3
  * Author:            John Smith
