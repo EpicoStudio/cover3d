@@ -1,0 +1,204 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: 3D Cover\n"
+"POT-Creation-Date: 2023-05-17 21:48-0300\n"
+"PO-Revision-Date: 2023-05-17 21:48-0300\n"
+"Last-Translator: Márcio Duarte <contato@uberfacil.com>\n"
+"Language-Team: Márcio Duarte <contato@uberfacil.com>\n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 3.3.1\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: cover3d.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+
+#: blocks/book/book.js:30
+msgid "book"
+msgstr "Livro"
+
+#: blocks/book/book.js:30
+msgid "cover"
+msgstr "capa"
+
+#: blocks/book/book.js:30
+msgid "3D"
+msgstr "3D"
+
+#: blocks/book/book.js:30
+msgid "animated"
+msgstr "animada"
+
+#: blocks/book/book.js:30
+msgid "hover"
+msgstr "Houver"
+
+#: blocks/book/book.js:30
+msgid "lead magnet"
+msgstr "isca digital"
+
+#: blocks/book/book.js:94
+msgid "Block properties"
+msgstr "Propriedades do bloco"
+
+#: blocks/book/book.js:100
+msgid "Book size"
+msgstr "Tamanho do livro"
+
+#: blocks/book/book.js:111
+msgid ""
+"Enter the short text that will appear on the back cover on hover (only "
+"displayed with linked covers and for large and medium sizes)."
+msgstr ""
+"Digite o texto curto que aparecerá na contracapa ao passar o mouse (exibido "
+"apenas com capas vinculadas e para tamanhos grandes e médios)."
+
+#: blocks/book/book.js:112
+msgid "Back cover text"
+msgstr "Ícone da contracapa"
+
+#: blocks/book/book.js:118
+msgid "Back cover icon"
+msgstr "Ícone da contracapa"
+
+#: blocks/book/book.php:31
+msgid "Cover image"
+msgstr "Imagem de Capa"
+
+#: blocks/book/book.php:34
+#, php-format
+msgid "%s"
+msgstr "%s"
+
+#: blocks/book/book_register.php:5
+msgid "3D Book Cover"
+msgstr "Capa de Livro 3D"
+
+#: blocks/book/book_register.php:6
+msgid "A 3D book cover animated on hover."
+msgstr "Uma capa de livro 3D animada ao passar o mouse."
+
+#: blocks/pg-blocks-controls.js:98
+msgid "No posts selected"
+msgstr "Nenhum post selecionado"
+
+#: blocks/pg-blocks-controls.js:107
+msgid "Select a "
+msgstr "Selecionar um "
+
+#: blocks/pg-blocks-controls.js:118
+msgid "Deselect post"
+msgstr "Desmarcar postagem"
+
+#: blocks/pg-blocks-controls.js:146 blocks/pg-blocks-controls.js:620
+msgid "Select a post"
+msgstr "Selecione um post"
+
+#: blocks/pg-blocks-controls.js:259
+msgid "Select an image"
+msgstr "Selecione uma imagem"
+
+#: blocks/pg-blocks-controls.js:301
+msgid "Set inline SVG"
+msgstr "Definir SVG em linha"
+
+#: blocks/pg-blocks-controls.js:308 blocks/pg-blocks-controls.js:316
+msgid "Replace image"
+msgstr "Substituir imagem"
+
+#: blocks/pg-blocks-controls.js:333
+msgid "Edit SVG"
+msgstr "Editar SVG"
+
+#: blocks/pg-blocks-controls.js:340
+msgid "Remove image"
+msgstr "Remover imagem"
+
+#: blocks/pg-blocks-controls.js:373
+msgid "Paste or edit the SVG image code."
+msgstr "Cole ou edite o código da imagem SVG."
+
+#: blocks/pg-blocks-controls.js:374
+msgid "Edit inline SVG"
+msgstr "Editar SVG em linha"
+
+#: blocks/pg-blocks-controls.js:390
+msgid "Close"
+msgstr "Fechar"
+
+#: blocks/pg-blocks-controls.js:399
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: blocks/pg-blocks-controls.js:428
+msgid "Select color"
+msgstr "Escolher cor"
+
+#: blocks/pg-blocks-controls.js:449
+msgid "Clear"
+msgstr "Limpar"
+
+#: blocks/pg-blocks-controls.js:527
+msgid "Select link"
+msgstr "Selecionar link"
+
+#: blocks/pg-blocks-controls.js:557
+msgid "×"
+msgstr "×"
+
+#: blocks/pg-blocks-controls.js:583
+msgid "Post type"
+msgstr "Tipo de postagem"
+
+#: blocks/pg-blocks-controls.js:813
+msgid "Block rendered as empty."
+msgstr "Bloco processado como vazio."
+
+#. translators: %s: error message describing the problem
+#: blocks/pg-blocks-controls.js:819
+#, javascript-format
+msgid "Error loading block: %s"
+msgstr "Erro ao carregar bloco: %s"
+
+#: cover3d.php:114
+msgid "Big cover"
+msgstr "Capa grande"
+
+#: cover3d.php:115
+msgid "Medium cover"
+msgstr "Capa média"
+
+#: cover3d.php:116
+msgid "Small cover"
+msgstr "Capa pequena"
+
+#. Plugin Name of the plugin/theme
+msgid "3D Cover"
+msgstr "Capa 3D"
+
+#. Plugin URI of the plugin/theme
+msgid "https://example.com/plugins/the-basics/"
+msgstr "https://example.com/plugins/the-basics/"
+
+#. Description of the plugin/theme
+msgid "Describe what the plugin does."
+msgstr "Descreva o que o plugin faz."
+
+#. Author of the plugin/theme
+msgid "John Smith"
+msgstr "João da Silva"
+
+#. Author URI of the plugin/theme
+msgid "https://author.example.com/"
+msgstr "https://author.example.com/"
+
+#~ msgid "A 3D book cover animated on hover"
+#~ msgstr "Uma capa de livro 3D animada ao passar o mouse"
