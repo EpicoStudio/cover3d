@@ -93,7 +93,7 @@
                                     title: __('Block properties', 'cover3d')
                                 }, [
                                     
-                                    pgUrlControl('book_cover_link', setAttributes, props, __( 'Book cover link', 'cover3d' ), __( 'Add an optional link to the book (to download, buy, or whatever). Adding a link will trigger the hover animation to show the back cover.', 'cover3d' ), null ),
+                                    pgUrlControl('book_cover_link', setAttributes, props, __( 'Book cover link', 'cover3d' ), __( 'Add an optional link to the book (to download or buy). Adding a link will trigger the hover animation to show the back cover.', 'cover3d' ), null ),
                                     el(SelectControl, {
                                         value: props.attributes.book_size,
                                         label: __( 'Book size', 'cover3d' ),
