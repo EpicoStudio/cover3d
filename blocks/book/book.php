@@ -2,7 +2,6 @@
 /**
  * Book HTML template.
  * Version: 1.0
- * Author: Márcio Duarte
  *
  */
 
