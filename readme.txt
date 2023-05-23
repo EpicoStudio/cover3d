@@ -51,6 +51,9 @@ Not at all. The plugin respects your privacy. It's completely add-free and the c
 = Does this plugin work in the Classic Editor? =
 No, this plugin works exclusively in the Block Editor.
 
+= Does the hover effect work in touchscreen devices? =
+Since touchscreen devices do not include a “hover” state, the effect is disabled on them.
+
 = Where can I send feedback or support questions? =
 Please reach out via the official [plugin support forum](https://wordpress.org/support/plugin/cover3d).
 

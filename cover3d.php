@@ -21,39 +21,32 @@
  * Domain Path:       /languages
 */
 
+// Prevent direct access to the plugin file.
 defined( 'ABSPATH' ) || exit;
 
 // Define constants.
-define( 'COVER3D_URL', untrailingslashit( plugin_dir_url( __FILE__ ) ) );
-define( 'COVER3D_PATH', untrailingslashit( plugin_dir_path( __FILE__ ) ) );
-
+if ( ! defined( 'COVER3D_URL' ) ) :
+    define( 'COVER3D_URL', untrailingslashit( plugin_dir_url( __FILE__ ) ) );
+endif;
+if ( ! defined( 'COVER3D_PATH' ) ) :
+    define( 'COVER3D_PATH', untrailingslashit( plugin_dir_path( __FILE__ ) ) );
+endif;
 
 // Require resource files.
 require_once "inc/custom.php";
-if ( ! class_exists( 'PG_Helper_v2' ) ) {
+if ( ! class_exists( 'PG_Helper_v2' ) ) :
     require_once "inc/wp_pg_helpers.php";
-}
-if ( ! class_exists( 'PG_Blocks' ) ) {
+endif;
+if ( ! class_exists( 'PG_Blocks' ) ) :
     require_once "inc/wp_pg_blocks_helpers.php";
-}
-
-/**
- * Require the file that creates the block.
- * @return void
- */
-if ( ! function_exists( 'cover3d_blocks_init' ) ) :
-    function cover3d_blocks_init() {
-        require_once 'blocks/book/book_register.php';
-    }
-    add_action( 'init', 'cover3d_blocks_init' );
 endif;
 
 /**
- * Load block translations in the editor.
- * $path is not needed here, as this is hosted on WordPress.org.
+ * Require the file that creates the block and
+ * load block translations in the editor..
  * @return void
  */
-function cover3d_set_script_translations() {
-    wp_set_script_translations( 'block-cover3d-book-script', 'cover3d' );
-}
-add_action( 'init', 'cover3d_set_script_translations' );
+add_action('init', function () {
+    require_once 'blocks/book/book_register.php';
+    wp_set_script_translations('block-cover3d-book-script', 'cover3d');
+});

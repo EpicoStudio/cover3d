@@ -23,13 +23,15 @@
     transform: rotateY(-30deg);
 }
 
-.book-cover-container .book-cover-image:hover {
-    transform: rotateY(0deg);
-}
+@media (hover: hover) {
+    .book-cover-container .book-cover-image:hover {
+        transform: rotateY(0deg);
+    }
 
-/* Rotate 180 degrees if there's an enclosing link.*/
-a.book-cover-link .book-cover-container .book-cover-image:hover {
-    transform: rotateY(-180deg);
+    /* Rotate 180 degrees if there's an enclosing link.*/
+    a.book-cover-link .book-cover-container .book-cover-image:hover {
+        transform: rotateY(-180deg);
+    }
 }
 
 .book-cover-container .book-cover-image {
