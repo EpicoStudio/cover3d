@@ -43,5 +43,5 @@ Not at all. The plugin respects your privacy. It's completely add-free and the c
 ## Does this plugin work in the Classic Editor?
 No, this plugin works exclusively in the Block Editor.
 
-## How can I support the development of the Dynamic Year Block?
+## How can I support the development of the Cover3D plugin?
 You can help with a [donation](https://ubr.link/donate-wp) or a [positive review](https://wordpress.org/support/plugin/cover3d/reviews/#new-post), if you find it useful.
