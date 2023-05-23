@@ -305,7 +305,7 @@ function pgMediaImageControl(prop, setAttributes, props, image_size, inline_svg,
         (getUrl() || getSVG()) && el(PanelRow, {}, [
             el(MediaUploadCheck, {}, [
                 el(MediaUpload, {
-                    title: __('Replace image', 'cover3d'),
+                    title: __('Replace image' ),
                     onSelect: onSelectMedia,
                     value: getId(),
                     allowedTypes: ['image'],
@@ -313,7 +313,7 @@ function pgMediaImageControl(prop, setAttributes, props, image_size, inline_svg,
                         onClick: open.open,
                         isSecondary: true
                     }, [
-                        __('Replace image', 'cover3d'),
+                        __('Replace image'),
                     ])
 
                 }, [
@@ -337,7 +337,7 @@ function pgMediaImageControl(prop, setAttributes, props, image_size, inline_svg,
                 isLink: true,
                 isDestructive: false
             }, [
-                __('Remove image', 'cover3d')
+                __('Remove image')
             ])
         ]),
 

@@ -33,7 +33,6 @@ if ( ! defined( 'COVER3D_PATH' ) ) :
 endif;
 
 // Require resource files.
-require_once "inc/custom.php";
 if ( ! class_exists( 'PG_Helper_v2' ) ) :
     require_once "inc/wp_pg_helpers.php";
 endif;
@@ -43,7 +42,7 @@ endif;
 
 /**
  * Require the file that creates the block and
- * load block translations in the editor..
+ * load block translations in the editor.
  * @return void
  */
 add_action('init', function () {

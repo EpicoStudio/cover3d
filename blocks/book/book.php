@@ -9,17 +9,20 @@
 // Define an unique ID for the block.
 $block_id = wp_unique_id() ?? 'ID';
 
+// Check the context.
+$context = isset($_GET['context']) ? sanitize_text_field($_GET['context']) : '';
+
 // Check if a link was added.
-$book_link = PG_Blocks::getAttribute($args, 'book_cover_link');
+$book_link = PG_Blocks::getAttribute( $args, 'book_cover_link' );
 
 // Define the “alt” text.
 $img_alt_value = PG_Blocks::getImageField($args, 'book_cover_img', 'alt', true);
 $img_alt = $img_alt_value ?? __( 'Cover image', 'cover3d' );
 
  // Get user color choices.
-$back_cover_color = cover3d_sanitize_rgba(PG_Blocks::getAttribute($args, 'back_cover_color')) ?? 'rgba(255,255,255,1)';
-$back_cover_bkg_color = cover3d_sanitize_rgba(PG_Blocks::getAttribute($args, 'back_cover_bkg_color')) ?? 'rgb(0,73,255,1)';
-$back_cover_icon_type = PG_Blocks::getAttribute($args, 'back_cover_icon_type') ?? 'download';
+$back_cover_color = PG_Helper_v2::sanitizeRgba( PG_Blocks::getAttribute( $args, 'back_cover_color' )) ?? 'rgba(255,255,255,1)';
+$back_cover_bkg_color = PG_Helper_v2::sanitizeRgba( PG_Blocks::getAttribute( $args, 'back_cover_bkg_color' )) ?? 'rgb(0,73,255,1)';
+$back_cover_icon_type = PG_Blocks::getAttribute( $args, 'back_cover_icon_type' ) ?? 'download';
 
 // Set the style for the “download” icon based on user choice.
 $download_icon = <<<EOT
@@ -55,10 +58,10 @@ if ( 0 !== $attachment_id ) :
     // But if the image size doesn't exist.
     } else {
         // Use the full size instead to get the metadata.
-        $img_size = array(
+        $img_size = [
             'width' => $metadata['width'],
             'height' => $metadata['height']
-        );
+        ];
     }
 
     // Get the image URL for the selected size.
@@ -100,17 +103,17 @@ else: // If the user did not choose a image (use default).
 endif;
 
 ?>
-<div <?php if(empty($_GET['context']) || $_GET['context'] !== 'edit') echo get_block_wrapper_attributes( array('class' => "book-cover", ) ); else echo 'data-wp-block-props="true"'; ?>>
+<div <?php echo ( empty( $context ) || $context !== 'edit' ) ? get_block_wrapper_attributes( [ 'class' => "book-cover" ] ) : 'data-wp-block-props="true"'; ?>>
     <?php echo '<style>'; // Open the style tag. ?>
-    <?php echo 'buy' === $back_cover_icon_type ? $buy_icon : $download_icon; // Echo the desired icon. ?>
-    <?php echo $color_styles; // Echo the color styles ?>.
+    <?php echo 'buy' === $back_cover_icon_type ? wp_strip_all_tags( $buy_icon ) : wp_strip_all_tags( $download_icon ); // Echo the desired icon. ?>
+    <?php echo wp_strip_all_tags( $color_styles ); // Echo the color styles ?>
     <?php echo '</style>'; // Close the style tag. ?>
     <div class="book-cover-wrapper">
         <?php if ($book_link['url']): // If a link was added. ?>
-        <a class="book-cover-link" href="<?php echo (!empty($_GET['context']) && $_GET['context'] === 'edit') ? 'javascript:void()' : PG_Blocks::getLinkUrl( $args, 'book_cover_link' ) ?>" id="<?php echo "book-cover-link-" . $block_id; ?>" aria-labelledby="<?php echo "book-cover-label-" . $block_id; ?>">
+        <a class="book-cover-link" href="<?php echo ( ! empty( $_GET['context'] ) && $_GET['context'] === 'edit' ) ? 'javascript:void()' : esc_url( PG_Blocks::getLinkUrl( $args, 'book_cover_link' ) ) ?>" id="<?php echo "book-cover-link-" . esc_attr( $block_id ) ?>" aria-labelledby="<?php echo "book-cover-label-" . esc_attr( $block_id ) ?>">
         <?php endif; ?>
-            <div class="book-cover-container" id="<?php echo "book-cover-container-" . $block_id; ?>">
-                <div class="book-cover-image" data-icon="<?php echo PG_Blocks::getAttribute( $args, 'back_cover_icon_type' ) ?>" data-size="<?php echo PG_Blocks::getAttribute( $args, 'book_size' ) ?>">
+            <div class="book-cover-container" id="<?php echo "book-cover-container-" . esc_attr( $block_id ) ?>">
+                <div class="book-cover-image" data-icon="<?php echo esc_attr( PG_Blocks::getAttribute( $args, 'back_cover_icon_type' ) ) ?>" data-size="<?php echo esc_attr( PG_Blocks::getAttribute( $args, 'book_size' ) ) ?>">
                     <div aria-hidden="true" class="book-cover-pages"></div>
                     <picture>
                         <source media="(max-width: 767px)" srcset="<?php echo esc_url( $medium_size_url ) ?>">
@@ -123,7 +126,9 @@ endif;
                             alt="<?php echo esc_html( $img_alt ); ?>"
                             onerror="this.classList.add('book-cover-notfound')">
                     </picture>
-                    <div class="book-backcover"><?php echo PG_Blocks::getAttribute( $args, 'back_cover_text' ) ?></div>
+                    <div class="book-backcover" <?php echo 'small' === PG_Blocks::getAttribute( $args, 'book_size' ) ? 'aria-hidden="true"' : '' ?>>
+                        <?php echo 'small' !== PG_Blocks::getAttribute( $args, 'book_size' ) ? esc_html( PG_Blocks::getAttribute( $args, 'back_cover_text' ) ) : '' ?>
+                    </div>
                 </div>
             </div>
         <?php if ( $book_link['url'] ): ?>

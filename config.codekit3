@@ -117,14 +117,6 @@
       "oAP" : "\/cover3d.php",
       "oF" : 0
     },
-    "\/inc\/custom.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 1,
-      "oAP" : "\/inc\/custom.php",
-      "oF" : 1
-    },
     "\/inc\/wp_pg_blocks_helpers.php" : {
       "cB" : 0,
       "ft" : 8192,

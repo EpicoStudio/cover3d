@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 3D Cover\n"
-"POT-Creation-Date: 2023-05-22 22:20-0300\n"
-"PO-Revision-Date: 2023-05-22 22:20-0300\n"
+"POT-Creation-Date: 2023-05-23 14:20-0300\n"
+"PO-Revision-Date: 2023-05-23 14:20-0300\n"
 "Last-Translator: Márcio Duarte <contato@uberfacil.com>\n"
 "Language-Team: Márcio Duarte <contato@uberfacil.com>\n"
 "Language: pt_BR\n"
@@ -20,15 +20,6 @@ msgstr ""
 "_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.min.js\n"
-
-#: blocks/book/book-BACKUP.php:31 blocks/book/book.php:17
-msgid "Cover image"
-msgstr "Imagem de Capa"
-
-#: blocks/book/book-BACKUP.php:34 blocks/book/book.php:129
-#, php-format
-msgid "%s"
-msgstr "%s"
 
 #: blocks/book/book.js:26 blocks/book/book_register.php:5
 msgid "A 3D book cover animated on hover."
@@ -132,6 +123,15 @@ msgstr "Cor da contracapa"
 #: blocks/book/book.js:127
 msgid "Back cover background"
 msgstr "Fundo da contracapa"
+
+#: blocks/book/book.php:17
+msgid "Cover image"
+msgstr "Imagem de Capa"
+
+#: blocks/book/book.php:131
+#, php-format
+msgid "%s"
+msgstr "%s"
 
 #: blocks/book/book_register.php:4
 msgid "3D Book Cover"
