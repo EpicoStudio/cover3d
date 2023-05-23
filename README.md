@@ -1,4 +1,4 @@
-![banner-1544x500](https://user-images.githubusercontent.com/1451087/206263238-891dae2c-8b20-4de4-8c71-346ed6a6e2f3.jpg)
+![banner-1544x500](https://github.com/EpicoStudio/cover3d/assets/1451087/68dbf7ca-1d31-4be9-aaeb-5ab061d55b18)
 # Cover3D
 
 * Donate link: https://ubr.link/donate-wp
