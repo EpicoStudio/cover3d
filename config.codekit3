@@ -67,6 +67,14 @@
       "oAP" : "\/blocks\/book\/book_register.php",
       "oF" : 1
     },
+    "\/blocks\/book\/book-BACKUP.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/blocks\/book\/book-BACKUP.php",
+      "oF" : 0
+    },
     "\/blocks\/book\/book.js" : {
       "bF" : 0,
       "ft" : 64,
@@ -140,22 +148,6 @@
       "oA" : 1,
       "oAP" : "\/inc\/wp_pg_helpers.php",
       "oF" : 1
-    },
-    "\/languages\/cover3d-pt_BR-49b43d3d5171133daa9d8afc2187cacd.json" : {
-      "ft" : 524288,
-      "oA" : 1,
-      "oAP" : "\/languages\/cover3d-pt_BR-49b43d3d5171133daa9d8afc2187cacd-min.json",
-      "oF" : 1,
-      "oO" : 1,
-      "oS" : 1
-    },
-    "\/languages\/cover3d-pt_BR-50d6c83ff9e71a796bd662af5d13e8aa.json" : {
-      "ft" : 524288,
-      "oA" : 1,
-      "oAP" : "\/languages\/cover3d-pt_BR-50d6c83ff9e71a796bd662af5d13e8aa-min.json",
-      "oF" : 1,
-      "oO" : 1,
-      "oS" : 1
     },
     "\/languages\/cover3d.pot" : {
       "cB" : 0,

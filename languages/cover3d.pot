@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 3D Cover\n"
-"POT-Creation-Date: 2023-05-17 21:48-0300\n"
+"POT-Creation-Date: 2023-05-22 22:20-0300\n"
 "PO-Revision-Date: 2023-05-16 17:42-0300\n"
 "Last-Translator: Márcio Duarte <contato@uberfacil.com>\n"
 "Language-Team: Márcio Duarte <contato@uberfacil.com>\n"
@@ -22,68 +22,117 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.min.js\n"
 
-#: blocks/book/book.js:30
+#: blocks/book/book-BACKUP.php:31 blocks/book/book.php:17
+msgid "Cover image"
+msgstr ""
+
+#: blocks/book/book-BACKUP.php:34 blocks/book/book.php:129
+#, php-format
+msgid "%s"
+msgstr ""
+
+#: blocks/book/book.js:26 blocks/book/book_register.php:5
+msgid "A 3D book cover animated on hover."
+msgstr ""
+
+#: blocks/book/book.js:29
 msgid "book"
 msgstr ""
 
-#: blocks/book/book.js:30
+#: blocks/book/book.js:29
 msgid "cover"
 msgstr ""
 
-#: blocks/book/book.js:30
+#: blocks/book/book.js:29
 msgid "3D"
 msgstr ""
 
-#: blocks/book/book.js:30
+#: blocks/book/book.js:29
 msgid "animated"
 msgstr ""
 
-#: blocks/book/book.js:30
+#: blocks/book/book.js:29
 msgid "hover"
 msgstr ""
 
-#: blocks/book/book.js:30
+#: blocks/book/book.js:29
 msgid "lead magnet"
 msgstr ""
 
-#: blocks/book/book.js:94
+#: blocks/book/book.js:42 blocks/book/book.js:121
+#: blocks/book/book_register.php:26
+msgid "Download"
+msgstr ""
+
+#: blocks/book/book.js:61 blocks/book/book.js:122
+#: blocks/book/book_register.php:46
+msgid "Buy"
+msgstr ""
+
+#: blocks/book/book.js:89
+msgid "Book cover image"
+msgstr ""
+
+#: blocks/book/book.js:89
+msgid "Add your book cover image."
+msgstr ""
+
+#: blocks/book/book.js:93
 msgid "Block properties"
 msgstr ""
 
-#: blocks/book/book.js:100
+#: blocks/book/book.js:96
+msgid "Book cover link"
+msgstr ""
+
+#: blocks/book/book.js:96
+msgid ""
+"Add an optional link to the book (to download, buy, or "
+"whatever). Adding a link will trigger the hover "
+"animation to show the back cover."
+msgstr ""
+
+#: blocks/book/book.js:99
 msgid "Book size"
 msgstr ""
 
-#: blocks/book/book.js:111
+#: blocks/book/book.js:103
+msgid "Big"
+msgstr ""
+
+#: blocks/book/book.js:104
+msgid "Medium"
+msgstr ""
+
+#: blocks/book/book.js:105
+msgid "Small"
+msgstr ""
+
+#: blocks/book/book.js:110
 msgid ""
 "Enter the short text that will appear on the back cover "
 "on hover (only displayed with linked covers and for "
 "large and medium sizes)."
 msgstr ""
 
-#: blocks/book/book.js:112
+#: blocks/book/book.js:111
 msgid "Back cover text"
 msgstr ""
 
-#: blocks/book/book.js:118
+#: blocks/book/book.js:117
 msgid "Back cover icon"
 msgstr ""
 
-#: blocks/book/book.php:31
-msgid "Cover image"
+#: blocks/book/book.js:125
+msgid "Back cover color"
 msgstr ""
 
-#: blocks/book/book.php:34
-#, php-format
-msgid "%s"
+#: blocks/book/book.js:127
+msgid "Back cover background"
 msgstr ""
 
-#: blocks/book/book_register.php:5
+#: blocks/book/book_register.php:4
 msgid "3D Book Cover"
-msgstr ""
-
-#: blocks/book/book_register.php:6
-msgid "A 3D book cover animated on hover."
 msgstr ""
 
 #: blocks/pg-blocks-controls.js:98
@@ -170,34 +219,24 @@ msgstr ""
 msgid "Error loading block: %s"
 msgstr ""
 
-#: cover3d.php:114
-msgid "Big cover"
-msgstr ""
-
-#: cover3d.php:115
-msgid "Medium cover"
-msgstr ""
-
-#: cover3d.php:116
-msgid "Small cover"
-msgstr ""
-
 #. Plugin Name of the plugin/theme
-msgid "3D Cover"
+msgid "Cover3D"
 msgstr ""
 
 #. Plugin URI of the plugin/theme
-msgid "https://example.com/plugins/the-basics/"
+msgid "https://github.com/EpicoStudio/cover3d"
 msgstr ""
 
 #. Description of the plugin/theme
-msgid "Describe what the plugin does."
+msgid ""
+"A block that displays a 3D book cover, animated when "
+"you mouse over it."
 msgstr ""
 
 #. Author of the plugin/theme
-msgid "John Smith"
+msgid "Márcio Duarte"
 msgstr ""
 
 #. Author URI of the plugin/theme
-msgid "https://author.example.com/"
+msgid "https://epico.studio"
 msgstr ""

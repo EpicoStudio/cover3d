@@ -54,6 +54,6 @@ endif;
  * @return void
  */
 function cover3d_set_script_translations() {
-    wp_set_script_translations( 'block-cover3d-book-script', 'cover3d', plugin_dir_path( __FILE__ ) . 'languages' );
+    wp_set_script_translations( 'block-cover3d-book-script', 'cover3d' );
 }
 add_action( 'init', 'cover3d_set_script_translations' );

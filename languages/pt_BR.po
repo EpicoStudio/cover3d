@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 3D Cover\n"
-"POT-Creation-Date: 2023-05-22 17:25-0300\n"
-"PO-Revision-Date: 2023-05-22 17:25-0300\n"
+"POT-Creation-Date: 2023-05-22 22:20-0300\n"
+"PO-Revision-Date: 2023-05-22 22:20-0300\n"
 "Last-Translator: Márcio Duarte <contato@uberfacil.com>\n"
 "Language-Team: Márcio Duarte <contato@uberfacil.com>\n"
 "Language: pt_BR\n"
@@ -21,11 +21,11 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.min.js\n"
 
-#: blocks/book/book-BACKUP.php:31
+#: blocks/book/book-BACKUP.php:31 blocks/book/book.php:17
 msgid "Cover image"
 msgstr "Imagem de Capa"
 
-#: blocks/book/book-BACKUP.php:34
+#: blocks/book/book-BACKUP.php:34 blocks/book/book.php:129
 #, php-format
 msgid "%s"
 msgstr "%s"
