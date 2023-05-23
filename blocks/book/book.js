@@ -24,7 +24,7 @@
         apiVersion: 2,
         title: '3D Book Cover',
         description: __( 'A 3D book cover animated on hover.', 'cover3d' ),
-        icon: el('svg', { xmlns: 'http://www.w3.org/2000/svg', viewBox: '0 0 24 24' }, el('path', { d: 'M21 4H7C5.89543 4 5 4.89543 5 6C5 7.10457 5.89543 8 7 8H21V21C21 21.5523 20.5523 22 20 22H7C4.79086 22 3 20.2091 3 18V6C3 3.79086 4.79086 2 7 2H20C20.5523 2 21 2.44772 21 3V4ZM5 18C5 19.1046 5.89543 20 7 20H19V10H7C6.27143 10 5.58835 9.80521 5 9.46487V18ZM20 7H7C6.44772 7 6 6.55228 6 6C6 5.44772 6.44772 5 7 5H20V7Z' })),
+        icon: el('svg', { viewBox: '0 0 24 24', xmlns: 'http://www.w3.org/2000/svg', style: { strokeLinecap: 'round',strokeLinejoin: 'round',strokeMiterlimit: '1.5',fill: 'none',stroke: '#000',strokeWidth: '1px' } }, [el('path', { d: 'M10.358 3.792v3.283h6.567V3.792h-6.567zM7.075 10.358l3.283-3.283h6.567l-3.283 3.283H7.075zM7.075.509l3.283 3.283h6.567L13.642.509H7.075z' }), el('path', { d: 'M10.358 7.075 7.075 3.792V.509l3.283 3.283v3.283zM10.358 13.642v3.283h6.567v-3.283h-6.567z' }), el('path', { d: 'm7.075 20.208 3.283-3.283h6.567l-3.283 3.283H7.075zM7.075 10.358l3.283 3.284h6.567l-3.283-3.284H7.075z' }), el('path', { d: 'm10.358 16.925-3.283-3.283v-3.284l3.283 3.284v3.283zM13.642 23.491v-3.283l3.283-3.283v3.283l-3.283 3.283zM7.075 20.208v3.283h6.567v-3.283H7.075z' })]),
         category: 'media',
         keywords: [ __('book', 'cover3d'), __('cover', 'cover3d'), __('3D', 'cover3d'), __('animated', 'cover3d'), __('hover', 'cover3d'), __('lead magnet', 'cover3d') ],
         supports: {color: {background: false,text: false,gradients: false,link: false,},typography: {fontSize: false,},anchor: false,align: false,},
