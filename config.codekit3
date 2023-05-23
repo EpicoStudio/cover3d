@@ -67,14 +67,6 @@
       "oAP" : "\/blocks\/book\/book_register.php",
       "oF" : 1
     },
-    "\/blocks\/book\/book-BACKUP.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/blocks\/book\/book-BACKUP.php",
-      "oF" : 0
-    },
     "\/blocks\/book\/book.js" : {
       "bF" : 0,
       "ft" : 64,
