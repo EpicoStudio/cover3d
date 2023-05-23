@@ -1,4 +1,4 @@
-=== Dynamic Year Block ===
+=== Cover3D ===
 Contributors:      pagelab, epicostudio
 Tags:              cover, 3d, book cover, lead magnet, block
 Tested up to:      6.2.2
@@ -61,7 +61,7 @@ Feel free to ask questions, request new features or report bugs.
 
 You can also follow the development of the plugin in the official Épico Studio [GitHub repository](https://github.com/EpicoStudio/cover3d), where you can see the complete code.
 
-= How can I support the development of the Dynamic Year Block? =
+= How can I support the development of the Cover3D plugin? =
 You can help with a [donation](https://ubr.link/donate-wp) or a [positive review](https://wordpress.org/support/plugin/cover3d/reviews/#new-post), if you find it useful.
 
 == Screenshots ==
