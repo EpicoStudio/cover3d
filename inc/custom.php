@@ -1,10 +1,17 @@
 <?php
 /**
+ * Addicional helper functions.
  *
- * Sanitize RGBA values.
- *
+ * @since 0.1.0
+ * @package cover3d
  */
 
+/**
+ *
+ * Sanitize RGBA values.
+ * @param  string    $rgba Color value in RGBA
+ * @return string    Sanitized color value.
+ */
 function cover3d_sanitize_rgba($rgba) {
     $sanitized_rgba = sanitize_text_field($rgba);
     if (preg_match('/^rgba\(\d{1,3},\s*\d{1,3},\s*\d{1,3},\s*(0|1|0?\.\d+)\)$/', $sanitized_rgba)) {
@@ -15,9 +22,10 @@ function cover3d_sanitize_rgba($rgba) {
 
 /**
  *
- * Função para gravar erros no debug.log do WordPress
- * Usage: write_log( "The variable value is: $variable");
- *
+ * Function to record errors in WordPress wp-content/debug.log.
+ * Usage: cover3d_write_log( "The variable value is: $variable");
+ * @param  mixed    $log The variable to write to the debug.log file.
+ * @return void
  */
 
 function cover3d_write_log( $log )  {

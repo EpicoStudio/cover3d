@@ -1,8 +1,6 @@
 <?php
 /**
- * Class Name: PG_Image, PG_Helper...
- * GitHub URI:
- * Description:
+ * Class Name: PG_Image, PG_Helper.
  * Version: 1.0
  * Author: Matjaz Trontelj - @pinegrow
  * License: GPL-2.0+
@@ -305,7 +303,7 @@ if(! class_exists( 'PG_Helper_v2' )) {
         }
     }
 
-    //Compatibility with any existing custom code
+    // Compatibility with any existing custom code.
     if(! class_exists( 'PG_Helper' )) {
         class PG_Helper extends PG_Helper_v2 {
 

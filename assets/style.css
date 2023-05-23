@@ -50,6 +50,11 @@ a.book-cover-link .book-cover-container .book-cover-image:hover {
     transform: translateZ(31px);
 }
 
+.book-cover-container .book-cover-image img {
+    height: 100%;
+    max-width: 100%;
+}
+
 img.book-cover-notfound::before {
     content: '' !important;
     width: 100%;

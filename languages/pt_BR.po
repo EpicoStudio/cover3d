@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 3D Cover\n"
-"POT-Creation-Date: 2023-05-17 21:48-0300\n"
-"PO-Revision-Date: 2023-05-17 21:48-0300\n"
+"POT-Creation-Date: 2023-05-22 17:25-0300\n"
+"PO-Revision-Date: 2023-05-22 17:25-0300\n"
 "Last-Translator: Márcio Duarte <contato@uberfacil.com>\n"
 "Language-Team: Márcio Duarte <contato@uberfacil.com>\n"
 "Language: pt_BR\n"
@@ -16,44 +16,100 @@ msgstr ""
 "X-Poedit-WPHeader: cover3d.php\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
-"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
-"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.min.js\n"
 
-#: blocks/book/book.js:30
+#: blocks/book/book-BACKUP.php:31
+msgid "Cover image"
+msgstr "Imagem de Capa"
+
+#: blocks/book/book-BACKUP.php:34
+#, php-format
+msgid "%s"
+msgstr "%s"
+
+#: blocks/book/book.js:26 blocks/book/book_register.php:5
+msgid "A 3D book cover animated on hover."
+msgstr "Uma capa de livro 3D animada ao passar o mouse."
+
+#: blocks/book/book.js:29
 msgid "book"
 msgstr "Livro"
 
-#: blocks/book/book.js:30
+#: blocks/book/book.js:29
 msgid "cover"
 msgstr "capa"
 
-#: blocks/book/book.js:30
+#: blocks/book/book.js:29
 msgid "3D"
 msgstr "3D"
 
-#: blocks/book/book.js:30
+#: blocks/book/book.js:29
 msgid "animated"
 msgstr "animada"
 
-#: blocks/book/book.js:30
+#: blocks/book/book.js:29
 msgid "hover"
 msgstr "Houver"
 
-#: blocks/book/book.js:30
+#: blocks/book/book.js:29
 msgid "lead magnet"
 msgstr "isca digital"
 
-#: blocks/book/book.js:94
+#: blocks/book/book.js:42 blocks/book/book.js:121
+#: blocks/book/book_register.php:26
+msgid "Download"
+msgstr "Baixar"
+
+#: blocks/book/book.js:61 blocks/book/book.js:122
+#: blocks/book/book_register.php:46
+msgid "Buy"
+msgstr "Comprar"
+
+#: blocks/book/book.js:89
+msgid "Book cover image"
+msgstr "Imagem de capa"
+
+#: blocks/book/book.js:89
+msgid "Add your book cover image."
+msgstr "Adicione a imagem da capa de seu livro."
+
+#: blocks/book/book.js:93
 msgid "Block properties"
 msgstr "Propriedades do bloco"
 
-#: blocks/book/book.js:100
+#: blocks/book/book.js:96
+msgid "Book cover link"
+msgstr "Link da capa"
+
+#: blocks/book/book.js:96
+msgid ""
+"Add an optional link to the book (to download, buy, or whatever). Adding a "
+"link will trigger the hover animation to show the back cover."
+msgstr ""
+"Adicione um link opcional para o livro (para fazer download, comprar ou "
+"qualquer outra coisa). A adição de um link acionará a animação de passar o "
+"mouse para mostrar a contracapa."
+
+#: blocks/book/book.js:99
 msgid "Book size"
 msgstr "Tamanho do livro"
 
-#: blocks/book/book.js:111
+#: blocks/book/book.js:103
+msgid "Big"
+msgstr "Grande"
+
+#: blocks/book/book.js:104
+msgid "Medium"
+msgstr "Média"
+
+#: blocks/book/book.js:105
+msgid "Small"
+msgstr "Pequena"
+
+#: blocks/book/book.js:110
 msgid ""
 "Enter the short text that will appear on the back cover on hover (only "
 "displayed with linked covers and for large and medium sizes)."
@@ -61,30 +117,25 @@ msgstr ""
 "Digite o texto curto que aparecerá na contracapa ao passar o mouse (exibido "
 "apenas com capas vinculadas e para tamanhos grandes e médios)."
 
-#: blocks/book/book.js:112
+#: blocks/book/book.js:111
 msgid "Back cover text"
-msgstr "Ícone da contracapa"
+msgstr "Texto da contracapa"
 
-#: blocks/book/book.js:118
+#: blocks/book/book.js:117
 msgid "Back cover icon"
 msgstr "Ícone da contracapa"
 
-#: blocks/book/book.php:31
-msgid "Cover image"
-msgstr "Imagem de Capa"
+#: blocks/book/book.js:125
+msgid "Back cover color"
+msgstr "Cor da contracapa"
 
-#: blocks/book/book.php:34
-#, php-format
-msgid "%s"
-msgstr "%s"
+#: blocks/book/book.js:127
+msgid "Back cover background"
+msgstr "Fundo da contracapa"
 
-#: blocks/book/book_register.php:5
+#: blocks/book/book_register.php:4
 msgid "3D Book Cover"
 msgstr "Capa de Livro 3D"
-
-#: blocks/book/book_register.php:6
-msgid "A 3D book cover animated on hover."
-msgstr "Uma capa de livro 3D animada ao passar o mouse."
 
 #: blocks/pg-blocks-controls.js:98
 msgid "No posts selected"
@@ -168,37 +219,47 @@ msgstr "Bloco processado como vazio."
 msgid "Error loading block: %s"
 msgstr "Erro ao carregar bloco: %s"
 
-#: cover3d.php:114
-msgid "Big cover"
-msgstr "Capa grande"
-
-#: cover3d.php:115
-msgid "Medium cover"
-msgstr "Capa média"
-
-#: cover3d.php:116
-msgid "Small cover"
-msgstr "Capa pequena"
-
 #. Plugin Name of the plugin/theme
-msgid "3D Cover"
-msgstr "Capa 3D"
+msgid "Cover3D"
+msgstr "Capa3D"
 
 #. Plugin URI of the plugin/theme
-msgid "https://example.com/plugins/the-basics/"
-msgstr "https://example.com/plugins/the-basics/"
+msgid "https://github.com/EpicoStudio/cover3d"
+msgstr "https://github.com/EpicoStudio/cover3d"
 
 #. Description of the plugin/theme
-msgid "Describe what the plugin does."
-msgstr "Descreva o que o plugin faz."
+msgid "A block that displays a 3D book cover, animated when you mouse over it."
+msgstr ""
+"Um bloco que exibe uma capa de livro em 3D, com uma animação que é ativada "
+"você passa o mouse sobre ela."
 
 #. Author of the plugin/theme
-msgid "John Smith"
-msgstr "João da Silva"
+msgid "Márcio Duarte"
+msgstr "Márcio Duarte"
 
 #. Author URI of the plugin/theme
-msgid "https://author.example.com/"
-msgstr "https://author.example.com/"
+msgid "https://epico.studio"
+msgstr "https://epico.studio"
+
+#~ msgid "Big cover"
+#~ msgstr "Capa grande"
+
+#, fuzzy
+#~| msgid "Big cover"
+#~ msgid "Retina cover"
+#~ msgstr "Capa grande"
+
+#~ msgid "https://example.com/plugins/the-basics/"
+#~ msgstr "https://example.com/plugins/the-basics/"
+
+#~ msgid "Describe what the plugin does."
+#~ msgstr "Descreva o que o plugin faz."
+
+#~ msgid "John Smith"
+#~ msgstr "João da Silva"
+
+#~ msgid "https://author.example.com/"
+#~ msgstr "https://author.example.com/"
 
 #~ msgid "A 3D book cover animated on hover"
 #~ msgstr "Uma capa de livro 3D animada ao passar o mouse"

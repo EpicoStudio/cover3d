@@ -1,8 +1,6 @@
 <?php
 /**
  * Class Name: PG_Blocks
- * GitHub URI:
- * Description:
  * Version: 1.0
  * Author: Matjaz Trontelj - @pinegrow
  * License: GPL-2.0+

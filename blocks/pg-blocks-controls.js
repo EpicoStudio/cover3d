@@ -95,7 +95,7 @@ function pgPostSelectorControl(prop, setAttributes, props, title, help, post_typ
                 }, [
                     props.attributes[prop].length === 0 && el('div', {
                         className: 'pg-posts-control-list-item-empty'
-                    }, [ __( 'No posts selected' ) ]),
+                    }, [ __( 'No posts selected', 'cover3d' ) ]),
                     props.attributes[prop].length > 0 && renderItems()
                 ])
             ),
@@ -143,7 +143,7 @@ function pgPostSelectorControl(prop, setAttributes, props, title, help, post_typ
                     setIsVisible(false);
                 },
                 noDirectEntry: true,
-                searchInputPlaceholder: __('Select a post'),
+                searchInputPlaceholder: __('Select a post', 'cover3d'),
                 showInitialSuggestions: true,
                 settings: [],
                 hasRichPreviews: true,
@@ -256,7 +256,7 @@ function pgMediaImageControl(prop, setAttributes, props, image_size, inline_svg,
                         },
                         onClick: open.open
                     }, [
-                        (getUrl() === '' && getSVG() === '') &&__('Select an image'),
+                        (getUrl() === '' && getSVG() === '') &&__('Select an image', 'cover3d'),
                         !getSVG() && props[propMedia] && props[propMedia].source_url &&
                         el(ResponsiveWrapper, {
                                 naturalWidth: props[propMedia].media_details.width,
@@ -298,14 +298,14 @@ function pgMediaImageControl(prop, setAttributes, props, image_size, inline_svg,
                 },
                 isLink: true
             }, [
-                __('Set inline SVG')
+                __('Set inline SVG', 'cover3d')
             ]),
         ]),
 
         (getUrl() || getSVG()) && el(PanelRow, {}, [
             el(MediaUploadCheck, {}, [
                 el(MediaUpload, {
-                    title: __('Replace image'),
+                    title: __('Replace image', 'cover3d'),
                     onSelect: onSelectMedia,
                     value: getId(),
                     allowedTypes: ['image'],
@@ -313,7 +313,7 @@ function pgMediaImageControl(prop, setAttributes, props, image_size, inline_svg,
                         onClick: open.open,
                         isSecondary: true
                     }, [
-                        __('Replace image'),
+                        __('Replace image', 'cover3d'),
                     ])
 
                 }, [
@@ -330,14 +330,14 @@ function pgMediaImageControl(prop, setAttributes, props, image_size, inline_svg,
                 },
                 isSecondary: true
             }, [
-                __('Edit SVG')
+                __('Edit SVG', 'cover3d')
             ]),
             el(Button, {
                 onClick: removeMedia,
                 isLink: true,
                 isDestructive: false
             }, [
-                __('Remove image')
+                __('Remove image', 'cover3d')
             ])
         ]),
 
@@ -370,8 +370,8 @@ function pgMediaImageControl(prop, setAttributes, props, image_size, inline_svg,
             el(BaseControl, {}, [
                 el(TextareaControl, {
                     value: getSVG(),
-                    help: __( 'Paste or edit the SVG image code.' ),
-                    label: __( 'Edit inline SVG' ),
+                    help: __( 'Paste or edit the SVG image code.', 'cover3d' ),
+                    label: __( 'Edit inline SVG', 'cover3d' ),
                     className: 'pg-control-svg-edit-code',
                     onChange: function(val) {
                         setSVG(val);
@@ -396,7 +396,7 @@ function pgMediaImageControl(prop, setAttributes, props, image_size, inline_svg,
                 },
                 isLink: true
             }, [
-                __('Cancel')
+                __('Cancel', 'cover3d')
             ]),
         ]),
         help && el(BaseControl, {
@@ -580,7 +580,7 @@ function pgUrlControl(prop, setAttributes, props, title, help, post_type) {
                 ]),
                 el(SelectControl, {
                     value: props.attributes[prop].post_type,
-                    label: __( 'Post type' ),
+                    label: __( 'Post type', 'cover3d' ),
                     disabled: post_type !== null,
                     onChange: function(val) {
                         var d = {}
@@ -617,7 +617,7 @@ function pgUrlControl(prop, setAttributes, props, title, help, post_type) {
                     setAttributes(d)
                 },
                 noDirectEntry: false,
-                searchInputPlaceholder: __('Select a post'),
+                searchInputPlaceholder: __('Select a post', 'cover3d'),
                 showInitialSuggestions: true,
                 forceIsEditingLink: true,
                 settings: [],
@@ -810,13 +810,13 @@ function PgGetServerSideRender() {
     }
 
     function DefaultEmptyResponsePlaceholder( { className } ) {
-        return el(Placeholder, { className: className}, __( 'Block rendered as empty.' ));
+        return el(Placeholder, { className: className}, __( 'Block rendered as empty.', 'cover3d' ));
     }
 
     function DefaultErrorResponsePlaceholder( { response, className } ) {
         const errorMessage = sprintf(
             // translators: %s: error message describing the problem
-            __( 'Error loading block: %s' ),
+            __( 'Error loading block: %s', 'cover3d' ),
             response.errorMsg
         );
         return el(Placeholder, { className: className}, errorMessage);
