@@ -43,7 +43,7 @@ Do you have a book (or an e-book) that you want to promote? Or a subscription fo
 It can be used anywhere in the WordPress block editor, either in your content or in your templates.
 
 = Will this plugin hinder my website loading performance? =
-Absolutely not. The plugin uses very little CSS (7kb) to create the animation effect and no Javascript. It also can include an image for your cover, but you can select the desired image size. In any case, it only uses the `medium` size for the cover image on mobile devices, regardless of the the size choosen in the block control pannel, in order to avoid negative impacts on loading performance.
+Absolutely not. The plugin uses very little CSS (7kb) to create the animation effect and no Javascript on the front-end. It also can include an image for your cover, but you can select the desired image size. In any case, it only uses the `medium` size for the cover image on mobile devices, regardless of the the size choosen in the block control pannel, in order to avoid negative impacts on loading performance.
 
 = Does this plugin collect any data from me or my users? =
 Not at all. The plugin respects your privacy. It's completely add-free and the code only uses core WordPress functions. No admin notices or hidden “call home” functions.
@@ -51,8 +51,8 @@ Not at all. The plugin respects your privacy. It's completely add-free and the c
 = Does this plugin work in the Classic Editor? =
 No, this plugin works exclusively in the Block Editor.
 
-= Does the hover effect work in touchscreen devices? =
-Since touchscreen devices do not include a “hover” state, the effect is disabled on them.
+= Does the hover animation work in touchscreen devices? =
+Since touchscreen devices do not include a “hover” state, the animation is disabled on them.
 
 = Where can I send feedback or support questions? =
 Please reach out via the official [plugin support forum](https://wordpress.org/support/plugin/cover3d).
