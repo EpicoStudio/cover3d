@@ -57,6 +57,7 @@
 .book-cover-container .book-cover-image img {
     height: 100%;
     max-width: 100%;
+    border-radius: 2px 5px 5px 2px;
 }
 
 img.book-cover-notfound::before {
