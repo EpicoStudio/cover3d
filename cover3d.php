@@ -34,10 +34,10 @@ endif;
 
 // Require resource files.
 if ( ! class_exists( 'PG_Helper_v2' ) ) :
-    require_once "inc/wp_pg_helpers.php";
+    require_once( COVER3D_PATH . '/inc/wp_pg_helpers.php' );
 endif;
 if ( ! class_exists( 'PG_Blocks' ) ) :
-    require_once "inc/wp_pg_blocks_helpers.php";
+    require_once ( COVER3D_PATH . '/inc/wp_pg_blocks_helpers.php' );
 endif;
 
 /**
@@ -46,6 +46,6 @@ endif;
  * @return void
  */
 add_action('init', function () {
-    require_once 'blocks/book/book_register.php';
+    require_once ( COVER3D_PATH . '/blocks/book/book_register.php' );
     wp_set_script_translations('block-cover3d-book-script', 'cover3d');
 });
