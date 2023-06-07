@@ -11,12 +11,12 @@
   "files" : {
     "\/assets\/cover.png" : {
       "ft" : 32768,
-      "iS" : 7616,
-      "oA" : 0,
+      "iS" : 2699,
+      "oA" : 1,
       "oAP" : "\/assets\/cover.png",
-      "oF" : 0,
-      "oIPL" : 1,
-      "opt" : 1,
+      "oF" : 1,
+      "oIPL" : 0,
+      "opt" : 0,
       "oT" : 1,
       "ou" : "lpckwebp-none",
       "q" : 90,
@@ -25,9 +25,9 @@
     "\/assets\/cover2x.png" : {
       "ft" : 32768,
       "iS" : 8112,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/assets\/cover2x.png",
-      "oF" : 0,
+      "oF" : 1,
       "oIPL" : 0,
       "opt" : 0,
       "oT" : 1,
@@ -113,9 +113,9 @@
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/cover3d.php",
-      "oF" : 0
+      "oF" : 1
     },
     "\/inc\/wp_pg_blocks_helpers.php" : {
       "cB" : 0,
@@ -174,9 +174,9 @@
       "eSQ" : 1,
       "ft" : 4096,
       "hM" : 0,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/README.html",
-      "oF" : 0,
+      "oF" : 1,
       "oFM" : 0,
       "oS" : 0,
       "pHT" : 0,
