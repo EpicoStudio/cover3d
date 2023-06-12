@@ -16,7 +16,7 @@ Have an attractive 3D book cover that animates when you mouse over it, whether f
 ## Automatic installation:
 1. Open any post or page in your WordPress.
 2. Click the main plus icon (+), located at the upper left corner of the editor, to add a new block.
-3. Type “Cover 3D” in the search field.
+3. Type “Cover3D” in the search field.
 4. Look for the plugin with this name in the list of available block plugins and click to install.
 5. Wait for the installation process and the block will be available to use in your content. You can deactivate it in the “Plugins → All plugins” menu, in your WordPress admin dashboard.
 
@@ -29,13 +29,20 @@ Have an attractive 3D book cover that animates when you mouse over it, whether f
 # Frequently Asked Questions
 
 ## Why would I need this?
-Do you have a book (or an e-book) that you want to promote? Or a subscription form with a lead magnet to download an e-book for marketing purposes? Including a 3D cover can help grab the visitor's attention, increasing conversions.
+Do you have a book (or an e-book) that you want to promote? Or a subscription form with a lead magnet to download an e-book for marketing purposes? Including a 3D cover can help grab the visitor's attention to them, increasing conversions.
 
 ## What is the recommended way to use it?
 It can be used anywhere in the WordPress block editor, either in your content or in your templates.
 
+## What is the recommended size for my cover image file?
+The plugin offers three sizes for your cover: small, medium and big. The recommended image size for the “small” option is 400 x 600 pixels. For the “Medium” option, upload an image with 400 x 600 pixels. 400 x 600 pixels for the “big” option.
+
+## What image file formats do this plugin accept?
+You can use any of the [natively supported file types](https://wordpress.org/documentation/article/image-size-and-quality/) for images, like JPG, GIF of PNG. If your WordPress installation allows SVG file uploads, you can also use this format, which is specially good for covers with sharp details.
+
 ## Will this plugin hinder my website loading performance?
-Absolutely not. The plugin uses very little CSS (8kb) to create the animation effect and no Javascript on the front-end. It also can include an image for your cover, but you can select the desired image size. In any case, it only uses the `medium` size for the cover image on small screens, regardless of the the size choosen in the block control pannel, in order to avoid negative impacts on loading performance.
+The Cover3D plugin uses very little CSS (8kb) to create the animation effect without Javascript on the front-end, so is very lean. You can also include an image for your cover, but you can select the desired image size to minimize the performance impact. At any rate, the Cover3D block only uses the native `medium` size, defined in your WordPress admin panel (Settings → Media), for the cover image on small screens, regardless of the the size option choosen in the block control panel, in order to avoid negative impacts on loading performance.
+
 
 ## Does this plugin collect any data from me or my users?
 Not at all. The plugin respects your privacy. It's completely add-free and the code only uses core WordPress functions. No admin notices or hidden “call home” functions.
