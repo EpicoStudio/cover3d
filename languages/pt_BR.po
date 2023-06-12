@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 3D Cover\n"
-"POT-Creation-Date: 2023-05-23 16:56-0300\n"
-"PO-Revision-Date: 2023-05-23 16:56-0300\n"
+"POT-Creation-Date: 2023-06-12 18:18-0300\n"
+"PO-Revision-Date: 2023-06-12 18:18-0300\n"
 "Last-Translator: Márcio Duarte <contato@uberfacil.com>\n"
 "Language-Team: Márcio Duarte <contato@uberfacil.com>\n"
 "Language: pt_BR\n"
@@ -124,11 +124,11 @@ msgstr "Cor da contracapa"
 msgid "Back cover background"
 msgstr "Fundo da contracapa"
 
-#: blocks/book/book.php:20
+#: blocks/book/book.php:19
 msgid "Cover image"
 msgstr "Imagem de Capa"
 
-#: blocks/book/book.php:136
+#: blocks/book/book.php:135
 #, php-format
 msgid "%s"
 msgstr "%s"

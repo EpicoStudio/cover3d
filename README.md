@@ -43,7 +43,6 @@ You can use any of the [natively supported file types](https://wordpress.org/doc
 ## Will this plugin hinder my website loading performance?
 The Cover3D plugin uses very little CSS (8kb) to create the animation effect without Javascript on the front-end, so is very lean. You can also include an image for your cover, but you can select the desired image size to minimize the performance impact. At any rate, the Cover3D block only uses the native `medium` size, defined in your WordPress admin panel (Settings → Media), for the cover image on small screens, regardless of the the size option choosen in the block control panel, in order to avoid negative impacts on loading performance.
 
-
 ## Does this plugin collect any data from me or my users?
 Not at all. The plugin respects your privacy. It's completely add-free and the code only uses core WordPress functions. No admin notices or hidden “call home” functions.
 
