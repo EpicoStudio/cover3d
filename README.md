@@ -9,7 +9,7 @@
 * Stable tag: 0.1.0
 * License: GPL 2.0 or later
 
-Have an attractive 3D book cover that animates when you mouse over it, whether for decorative effect, to increase conversions, or for lead generation.
+Have an attractive 3D book cover that animates when you mouse over it, whether for decorative effect, increasing conversions, or generating leads.
 
 # Installation
 
@@ -35,10 +35,10 @@ Do you have a book (or an e-book) that you want to promote? Or a subscription fo
 It can be used anywhere in the WordPress block editor, either in your content or in your templates.
 
 ## What is the recommended size for my cover image file?
-The plugin offers three sizes for your cover: small, medium and big. The recommended image size for the “small” option is 400 x 600 pixels. For the “Medium” option, upload an image with 400 x 600 pixels. 400 x 600 pixels for the “big” option.
+The plugin offers three sizes for your cover: _small_, _medium_ and _big_. The minimum image size for the “small” option is *66 x 100 pixels*. For the “Medium” option, upload an image with at least *133 x 200 pixels*, and *200 x 300 pixels* for the “big” option.
 
 ## What image file formats do this plugin accept?
-You can use any of the [natively supported file types](https://wordpress.org/documentation/article/image-size-and-quality/) for images, like JPG, GIF of PNG. If your WordPress installation allows SVG file uploads, you can also use this format, which is specially good for covers with sharp details.
+You can use any of the [natively supported file types](https://wordpress.org/documentation/article/image-size-and-quality/) for images, like JPG, GIF or PNG. If your WordPress installation allows SVG file uploads, you can also use this format, which is specially good for covers with sharp details.
 
 ## Will this plugin hinder my website loading performance?
 The Cover3D plugin uses very little CSS (8kb) to create the animation effect without Javascript on the front-end, so is very lean. You can also include an image for your cover, but you can select the desired image size to minimize the performance impact. At any rate, the Cover3D block only uses the native `medium` size, defined in your WordPress admin panel (Settings → Media), for the cover image on small screens, regardless of the the size option choosen in the block control panel, in order to avoid negative impacts on loading performance.
