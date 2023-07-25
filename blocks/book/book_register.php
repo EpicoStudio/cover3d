@@ -46,5 +46,6 @@ PG_Blocks::register_block_type( array(
         'book_cover_link' => array('post_id' => 0, 'url' => '#void', 'post_type' => '', 'title' => ''), 'book_size' => 'big', 'back_cover_text' => __( 'Buy', 'cover3d'), 'back_cover_icon_type' => 'download', 'back_cover_color' => '', 'back_cover_bkg_color' => '', 'book_cover_img' => array('id' => 0, 'url' => esc_url( COVER3D_URL . '/assets/cover.png' ), 'size' => '', 'svg' => '', 'alt' => null)
     ),
     'dynamic' => true,
-    'version' => '0.1.0'
+    'version' => '0.2.0',
+    'api_version' => '3'
 ) );

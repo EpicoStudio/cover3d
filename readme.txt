@@ -1,10 +1,10 @@
 === Cover3D ===
 Contributors:      pagelab, epicostudio
 Tags:              cover, 3d, book cover, lead magnet, block
-Tested up to:      6.2.2
+Tested up to:      6.3
 Requires at least: 5.9
 Requires PHP:      7.0
-Stable tag:        0.1.0
+Stable tag:        0.2.0
 License:           GPL 2.0 or later
 License URI:       https://www.gnu.org/licenses/gpl-2.0.html
 Donate link:       https://ubr.link/donate-wp
@@ -76,8 +76,10 @@ You can help with a [donation](https://ubr.link/donate-wp) or a [positive review
 2. Block added in main content of a page.
 3. Block settings: you can add an image, choose the cover size, set colors and add an optional link.
 
-
 == Changelog ==
+
+= 0.2.0 =
+* Upgrading the `api_version` on the block registration.
 
 = 0.1.0 =
 * Initial release

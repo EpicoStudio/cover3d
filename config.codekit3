@@ -7,7 +7,7 @@
       "uuidString" : "F527F2D2-6BB4-4346-BF23-16103A7BAAA1"
     }
   ],
-  "creatorBuild" : "34484",
+  "creatorBuild" : "34510",
   "files" : {
     "\/assets\/cover.png" : {
       "ft" : 32768,
@@ -184,13 +184,13 @@
       "rFN" : 0,
       "uCM" : 0
     },
-    "\/readme.txt" : {
+    "\/README.txt" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
-      "oA" : 1,
-      "oAP" : "\/readme.txt",
-      "oF" : 1
+      "oA" : 0,
+      "oAP" : "\/README.txt",
+      "oF" : 0
     }
   },
   "hooks" : [

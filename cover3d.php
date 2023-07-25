@@ -10,7 +10,7 @@
  * Plugin Name:       Cover3D
  * Plugin URI:        https://github.com/EpicoStudio/cover3d
  * Description:       A block that displays a 3D book cover, animated when you mouse over it.
- * Version:           0.1.0
+ * Version:           0.2.0
  * Requires at least: 5.9
  * Requires PHP:      7.0
  * Author:            Márcio Duarte
