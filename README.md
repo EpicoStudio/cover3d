@@ -54,4 +54,4 @@ No, this plugin works exclusively in the Block Editor.
 Since touchscreen devices do not include a “hover” state, the animation is disabled on them.
 
 ## How can I support the development of the Cover3D plugin?
-You can help with a [donation](https://ubr.link/donate-wp) or a [positive review](https://wordpress.org/support/plugin/cover3d/reviews/#new-post), if you find it useful.
+You can help with a [donation](https://ubr.link/donate-wp), by [visiting our website](https://epico.studio) or publishing a [positive review](https://wordpress.org/support/plugin/cover3d/reviews/#new-post), if you find it useful.
