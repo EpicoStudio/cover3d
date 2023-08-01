@@ -108,8 +108,8 @@ endif;
     <?php echo wp_strip_all_tags( $color_styles ); // Echo the color styles ?>
     <?php echo '</style>'; // Close the style tag. ?>
     <div class="book-cover-wrapper">
-        <?php if ($book_link['url']): // If a link was added. ?>
-        <a class="book-cover-link" href="<?php echo ( ! empty( $_GET['context'] ) && $_GET['context'] === 'edit' ) ? 'javascript:void()' : esc_url( PG_Blocks::getLinkUrl( $args, 'book_cover_link' ) ) ?>" id="<?php echo "book-cover-link-" . esc_attr( $block_id ) ?>" aria-labelledby="<?php echo "book-cover-label-" . esc_attr( $block_id ) ?>">
+        <?php if ( $book_link['url'] && empty( $_GET['context'] ) ) : // If a link was added. ?>
+        <a class="book-cover-link" href="<?php echo esc_url( PG_Blocks::getLinkUrl( $args, 'book_cover_link' ) ) ?>" id="<?php echo "book-cover-link-" . esc_attr( $block_id ) ?>" aria-labelledby="<?php echo "book-cover-label-" . esc_attr( $block_id ) ?>">
         <?php endif; ?>
             <div class="book-cover-container" id="<?php echo "book-cover-container-" . esc_attr( $block_id ) ?>">
                 <div class="book-cover-image" data-icon="<?php echo esc_attr( PG_Blocks::getAttribute( $args, 'back_cover_icon_type' ) ) ?>" data-size="<?php echo esc_attr( PG_Blocks::getAttribute( $args, 'book_size' ) ) ?>">
@@ -130,7 +130,7 @@ endif;
                     </div>
                 </div>
             </div>
-        <?php if ( $book_link['url'] ): ?>
+        <?php if ( $book_link['url'] && empty( $_GET['context'] ) ) : // If a link was added. ?>
         </a>
         <?php echo '<span id="book-cover-label-' . esc_attr( $block_id ) . '" class="book-cover-sr-only">' . sprintf(__('%s', 'cover3d'), esc_html( $img_alt ) ) . '</span>';
         endif; ?>

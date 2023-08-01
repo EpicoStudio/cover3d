@@ -113,3 +113,7 @@
     max-height: 100px;
     max-width: 100%;
 }
+
+.components-panel > .components-panel__body > div.components-panel__row:nth-of-type(2) > button:nth-of-type(2) {
+    text-align: right;
+}

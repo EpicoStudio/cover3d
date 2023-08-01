@@ -4,7 +4,7 @@ Tags:              cover, 3d, book cover, lead magnet, block
 Tested up to:      6.3
 Requires at least: 5.9
 Requires PHP:      7.0
-Stable tag:        0.2.0
+Stable tag:        0.3.0
 License:           GPL 2.0 or later
 License URI:       https://www.gnu.org/licenses/gpl-2.0.html
 Donate link:       https://ubr.link/donate-wp
@@ -77,6 +77,9 @@ You can help with a [donation](https://ubr.link/donate-wp), by [visiting our web
 3. Block settings: you can add an image, choose the cover size, set colors and add an optional link.
 
 == Changelog ==
+
+= 0.3.0 =
+* Removing the book link while editing the block in the editor.
 
 = 0.2.0 =
 * Upgrading the `api_version` on the block registration.

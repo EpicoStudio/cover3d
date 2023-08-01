@@ -7,7 +7,7 @@
 * Tested up to: 6.3
 * Requires at least: 5.9
 * Requires PHP: 7.0
-* Stable tag: 0.2.0
+* Stable tag: 0.3.0
 * License: GPL 2.0 or later
 
 Have an attractive 3D book cover that animates when you mouse over it, whether for decorative effect, increasing conversions, or generating leads.
