@@ -79,10 +79,10 @@ You can help with a [donation](https://ubr.link/donate-wp), by [visiting our web
 == Changelog ==
 
 = 0.3.0 =
-* Removing the book link while editing the block in the editor.
+* Removed the book link while editing the block in the editor.
 
 = 0.2.0 =
-* Upgrading the `api_version` on the block registration.
+* Upgraded the `api_version` on the block registration.
 
 = 0.1.0 =
-* Initial release
+* Initial release.
