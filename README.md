@@ -4,10 +4,10 @@
 
 * Donate link: https://ubr.link/donate-wp
 * Tags: cover, 3d, book cover, lead magnet, block
-* Tested up to: 6.3
+* Tested up to: 6.4
 * Requires at least: 5.9
 * Requires PHP: 7.0
-* Stable tag: 0.3.0
+* Stable tag: 0.4.0
 * License: GPL 2.0 or later
 
 Have an attractive 3D book cover that animates when you mouse over it, whether for decorative effect, increasing conversions, or generating leads.

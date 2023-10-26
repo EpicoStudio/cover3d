@@ -99,7 +99,16 @@ else: // If the user did not choose a image (use default).
     // Define the height of the medium size.
     $medium_size_height = '600';
 
+    // Define the array for the wp_get_loading_optimization_attributes() function.
+    $img_size = [
+        'width' => $medium_size_width,
+        'height' => $medium_size_height
+    ];
+
 endif;
+
+// Get performance attributes for usage inside the <img> tag.
+$loading_optimization_attributes = wp_get_loading_optimization_attributes( 'img', $img_size, 'template_part_header' );
 
 ?>
 <div <?php echo ( empty( $context ) || $context !== 'edit' ) ? get_block_wrapper_attributes( [ 'class' => "book-cover" ] ) : 'data-wp-block-props="true"'; ?>>
@@ -117,7 +126,9 @@ endif;
                     <picture>
                         <source media="(max-width: 767px)" srcset="<?php echo esc_url( $medium_size_url ) ?>">
                         <source media="(min-width: 768px)" srcset="<?php echo esc_url( $selected_size_url ) ?>">
-                        <img
+                        <img <?php foreach( $loading_optimization_attributes as $attribute_name => $attribute_value ) {
+                                echo $attribute_name . '="' . esc_attr( $attribute_value ) . '" ';
+                            } ?>
                             class="book-cover-image-file"
                             width="<?php echo esc_attr( $medium_size_width ) ?>"
                             height="<?php echo esc_attr( $medium_size_height ) ?>"

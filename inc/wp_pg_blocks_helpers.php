@@ -37,7 +37,7 @@ if(! class_exists( 'PG_Blocks' )) {
 
                 wp_register_script('pg-blocks-controls',
                     $base_url . 'blocks/pg-blocks-controls.js',
-                    array('wp-blocks', 'wp-block-editor', 'wp-server-side-render', 'wp-media-utils', 'wp-data', 'wp-element'), $reg_args[ 'version' ]);
+                    array('wp-blocks', 'wp-block-editor', 'wp-server-side-render', 'wp-media-utils', 'wp-data', 'wp-element', 'lodash'), $reg_args[ 'version' ]);
 
                 wp_register_style('pg-blocks-controls-style',
                     $base_url . 'blocks/pg-blocks-controls.css',

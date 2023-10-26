@@ -305,7 +305,7 @@ function pgMediaImageControl(prop, setAttributes, props, image_size, inline_svg,
         (getUrl() || getSVG()) && el(PanelRow, {}, [
             el(MediaUploadCheck, {}, [
                 el(MediaUpload, {
-                    title: __('Replace image' ),
+                    title: __('Replace image', 'cover3d' ),
                     onSelect: onSelectMedia,
                     value: getId(),
                     allowedTypes: ['image'],
@@ -313,7 +313,7 @@ function pgMediaImageControl(prop, setAttributes, props, image_size, inline_svg,
                         onClick: open.open,
                         isSecondary: true
                     }, [
-                        __('Replace image'),
+                        __('Replace image', 'cover3d'),
                     ])
 
                 }, [
@@ -337,7 +337,7 @@ function pgMediaImageControl(prop, setAttributes, props, image_size, inline_svg,
                 isLink: true,
                 isDestructive: false
             }, [
-                __('Remove image')
+                __('Remove image', 'cover3d')
             ])
         ]),
 
@@ -387,7 +387,7 @@ function pgMediaImageControl(prop, setAttributes, props, image_size, inline_svg,
                 },
                 isSecondary: true
             }, [
-                __('Close')
+                __('Close', 'cover3d')
             ]),
             el(Button, {
                 onClick: function() {
@@ -425,7 +425,7 @@ function pgColorControl(prop, setAttributes, props, title, help) {
                 onClick: toggleVisible,
                 isSecondary: true
             }, [
-                el('span', {}, __( title || 'Select color' )),
+                el('span', {}, __( title || 'Select color', 'cover3d' )),
                 el('span', {
                     style: {
                         backgroundColor: props.attributes[prop],
@@ -446,7 +446,7 @@ function pgColorControl(prop, setAttributes, props, title, help) {
                 isLink: true,
                 isDestructive: false
             }, [
-                __('Clear')
+                __('Clear', 'cover3d')
             ]),
             isVisible && el(Popover, {
                 className: 'pg-control-color-popover'
@@ -524,7 +524,7 @@ function pgUrlControl(prop, setAttributes, props, title, help, post_type) {
                 }
             }, [
                 el(Icon, {icon: 'admin-links', style: {marginRight: '4px'} }),
-                !props.attributes[prop].url && el('span', {}, __('Select link')),
+                !props.attributes[prop].url && el('span', {}, __('Select link', 'cover3d')),
                 props.attributes[prop].url && el('span', {
                     style: {
                         maxWidth: '170px',

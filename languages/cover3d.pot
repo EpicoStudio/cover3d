@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 3D Cover\n"
-"POT-Creation-Date: 2023-06-12 18:18-0300\n"
+"POT-Creation-Date: 2023-10-26 18:05-0300\n"
 "PO-Revision-Date: 2023-05-16 17:42-0300\n"
 "Last-Translator: Márcio Duarte <contato@uberfacil.com>\n"
 "Language-Team: Márcio Duarte <contato@uberfacil.com>\n"
@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
-"X-Generator: Poedit 3.3.1\n"
+"X-Generator: Poedit 3.4.1\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
 "X-Poedit-WPHeader: cover3d.php\n"
@@ -22,103 +22,88 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.min.js\n"
 
-#: blocks/book/book.js:26 blocks/book/book_register.php:5
+#: blocks/book/book.js:26 blocks/book/book_register.php:4
+msgid "3D Book Cover"
+msgstr ""
+
+#: blocks/book/book.js:27 blocks/book/book_register.php:5
 msgid "A 3D book cover animated on hover."
 msgstr ""
 
-#: blocks/book/book.js:29
+#: blocks/book/book.js:30
 msgid "book"
 msgstr ""
 
-#: blocks/book/book.js:29
+#: blocks/book/book.js:30
 msgid "cover"
 msgstr ""
 
-#: blocks/book/book.js:29
+#: blocks/book/book.js:30
 msgid "3D"
 msgstr ""
 
-#: blocks/book/book.js:29
+#: blocks/book/book.js:30
 msgid "animated"
 msgstr ""
 
-#: blocks/book/book.js:29
+#: blocks/book/book.js:30
 msgid "hover"
 msgstr ""
 
-#: blocks/book/book.js:29
+#: blocks/book/book.js:30
 msgid "lead magnet"
 msgstr ""
 
-#: blocks/book/book.js:42 blocks/book/book.js:121
+#: blocks/book/book.js:43 blocks/book/book.js:120
 #: blocks/book/book_register.php:26
 msgid "Download"
 msgstr ""
 
-#: blocks/book/book.js:61 blocks/book/book.js:122
-#: blocks/book/book_register.php:46
-msgid "Buy"
-msgstr ""
-
-#: blocks/book/book.js:89
-msgid "Book cover image"
-msgstr ""
-
-#: blocks/book/book.js:89
-msgid "Add your book cover image."
-msgstr ""
-
-#: blocks/book/book.js:93
+#: blocks/book/book.js:92
 msgid "Block properties"
 msgstr ""
 
-#: blocks/book/book.js:96
-msgid "Book cover link"
-msgstr ""
-
-#: blocks/book/book.js:96
-msgid ""
-"Add an optional link to the book (to download or buy). "
-"Adding a link will trigger the hover animation to show "
-"the back cover."
-msgstr ""
-
-#: blocks/book/book.js:99
+#: blocks/book/book.js:98
 msgid "Book size"
 msgstr ""
 
-#: blocks/book/book.js:103
+#: blocks/book/book.js:102
 msgid "Big"
 msgstr ""
 
-#: blocks/book/book.js:104
+#: blocks/book/book.js:103
 msgid "Medium"
 msgstr ""
 
-#: blocks/book/book.js:105
+#: blocks/book/book.js:104
 msgid "Small"
 msgstr ""
 
-#: blocks/book/book.js:110
+#: blocks/book/book.js:109
 msgid ""
 "Enter the short text that will appear on the back cover "
 "on hover (only displayed with linked covers and for "
 "large and medium sizes)."
 msgstr ""
 
-#: blocks/book/book.js:111
+#: blocks/book/book.js:110
 msgid "Back cover text"
 msgstr ""
 
-#: blocks/book/book.js:117
+#: blocks/book/book.js:116
 msgid "Back cover icon"
 msgstr ""
 
-#: blocks/book/book.js:125
+#: blocks/book/book.js:121
+#: blocks/book/book_register.php:46
+msgid "Buy"
+msgstr ""
+
+#: blocks/book/book.js:124
 msgid "Back cover color"
 msgstr ""
 
-#: blocks/book/book.js:127
+#: blocks/book/book.js:126
 msgid "Back cover background"
 msgstr ""
 
@@ -126,13 +111,9 @@ msgstr ""
 msgid "Cover image"
 msgstr ""
 
-#: blocks/book/book.php:135
+#: blocks/book/book.php:146
 #, php-format
 msgid "%s"
-msgstr ""
-
-#: blocks/book/book_register.php:4
-msgid "3D Book Cover"
 msgstr ""
 
 #: blocks/pg-blocks-controls.js:98
