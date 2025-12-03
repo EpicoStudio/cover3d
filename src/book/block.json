@@ -1,0 +1,78 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "cover3d/book",
+	"version": "1.0.0",
+	"title": "3D Book Cover",
+	"category": "media",
+	"description": "A 3D book cover animated on hover.",
+	"keywords": [ "book", "cover", "3D", "animated", "hover", "lead magnet" ],
+	"icon": "book",
+	"textdomain": "cover3d",
+	"supports": {
+		"color": {
+			"background": false,
+			"text": false,
+			"gradients": false,
+			"link": false
+		},
+		"typography": {
+			"fontSize": false
+		},
+		"anchor": false,
+		"align": false,
+		"html": false
+	},
+	"attributes": {
+		"bookCoverLink": {
+			"type": "object",
+			"default": {
+				"url": "",
+				"opensInNewTab": false
+			}
+		},
+		"bookSize": {
+			"type": "string",
+			"default": "big"
+		},
+		"backCoverText": {
+			"type": "string",
+			"default": "Download"
+		},
+		"backCoverIconType": {
+			"type": "string",
+			"default": "download"
+		},
+		"backCoverColor": {
+			"type": "string",
+			"default": "#ffffff"
+		},
+		"backCoverBkgColor": {
+			"type": "string",
+			"default": "#0049ff"
+		},
+		"bookCoverImageId": {
+			"type": "integer",
+			"default": 0
+		},
+		"bookCoverImageAlt": {
+			"type": "string",
+			"default": ""
+		}
+	},
+	"example": {
+		"attributes": {
+			"bookCoverLink": {
+				"url": "#",
+				"opensInNewTab": false
+			},
+			"bookSize": "big",
+			"backCoverText": "Download",
+			"backCoverIconType": "download"
+		}
+	},
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"render": "file:./render.php"
+}

@@ -1,10 +1,10 @@
 === Cover3D ===
 Contributors:      pagelab, epicostudio
 Tags:              cover, 3d, book cover, lead magnet, block
-Tested up to:      6.4
-Requires at least: 5.9
-Requires PHP:      7.0
-Stable tag:        0.4.0
+Tested up to:      6.9
+Requires at least: 6.1
+Requires PHP:      7.4
+Stable tag:        1.0.0
 License:           GPL 2.0 or later
 License URI:       https://www.gnu.org/licenses/gpl-2.0.html
 Donate link:       https://ubr.link/donate-wp
@@ -77,6 +77,16 @@ You can help with a [donation](https://ubr.link/donate-wp), by [visiting our web
 3. Block settings: you can add an image, choose the cover size, set colors and add an optional link.
 
 == Changelog ==
+
+= 1.0.0 =
+* Complete rewrite using native WordPress block development practices.
+* Replaced Pinegrow custom framework with native WordPress Block API.
+* Uses block.json for block registration (WordPress 6.1+).
+* Modern ES6+ JavaScript with JSX and @wordpress/scripts build tooling.
+* Simplified attribute structure for better maintainability.
+* Improved accessibility with proper ARIA attributes.
+* Added "Open in new tab" option for links.
+* Performance improvements with block metadata collection support.
 
 = 0.4.0 =
 * Added support for inserting native performance attributes in the <img> tag via wp_get_loading_optimization_attributes().
