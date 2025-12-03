@@ -20,6 +20,7 @@
 		"build/",
 		"languages/",
 		"cover3d.php",
-		"readme.txt"
+		"readme.txt",
+		"LICENSE"
 	]
 }

@@ -125,13 +125,3 @@ function cover3d_sanitize_color( $color ) {
 	// Return a safe default if nothing matches.
 	return '#ffffff';
 }
-
-/**
- * Loads the plugin text domain for translations.
- *
- * @return void
- */
-function cover3d_load_textdomain() {
-	load_plugin_textdomain( 'cover3d', false, dirname( plugin_basename( __FILE__ ) ) . '/languages' );
-}
-add_action( 'init', 'cover3d_load_textdomain' );
