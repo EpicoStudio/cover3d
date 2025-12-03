@@ -1,10 +1,11 @@
 <?php
+
 /**
  * Cover3D
  *
  * @package           Cover3D
  * @author            Márcio Duarte
- * @copyright         2023 Épico Studio
+ * @copyright         2025 Épico Studio
  * @license           GPL v2 or later
  *
  * Plugin Name:       Cover3D
@@ -13,6 +14,7 @@
  * Version:           1.0.0
  * Requires at least: 6.1
  * Requires PHP:      7.4
+ * Tested up to:      6.9
  * Author:            Márcio Duarte
  * Author URI:        https://epico.studio
  * License:           GPL v2 or later
@@ -35,8 +37,12 @@ if ( ! defined( 'COVER3D_PATH' ) ) {
 /**
  * Registers the Cover3D block using the block.json metadata.
  *
+ * Uses wp_register_block_types_from_metadata_collection() for WordPress 6.7+
+ * with fallback to wp_register_block_metadata_collection() for older versions.
+ *
  * @link https://developer.wordpress.org/reference/functions/register_block_type/
  * @link https://developer.wordpress.org/reference/functions/wp_register_block_metadata_collection/
+ * @link https://developer.wordpress.org/reference/functions/wp_register_block_types_from_metadata_collection/
  *
  * @return void
  */
@@ -46,30 +52,20 @@ function cover3d_register_block() {
 		return;
 	}
 
-	$manifest_file = COVER3D_PATH . '/build/blocks-manifest.php';
-
-	// Register the block metadata collection to improve performance (WP 6.7+).
-	if ( file_exists( $manifest_file ) ) {
-		if ( function_exists( 'wp_register_block_types_from_metadata_collection' ) ) {
-			wp_register_block_types_from_metadata_collection(
-				COVER3D_PATH . '/build',
-				$manifest_file
-			);
-		} else {
-			if ( function_exists( 'wp_register_block_metadata_collection' ) ) {
-				wp_register_block_metadata_collection(
-					COVER3D_PATH . '/build',
-					$manifest_file
-				);
-			}
-			$manifest_data = require $manifest_file;
-			foreach ( array_keys( $manifest_data ) as $block_type ) {
-				register_block_type( COVER3D_PATH . "/build/{$block_type}" );
-			}
-		}
+	// WordPress 6.7+ has the most efficient registration method.
+	if ( function_exists( 'wp_register_block_types_from_metadata_collection' ) ) {
+		wp_register_block_types_from_metadata_collection( COVER3D_PATH . '/build', COVER3D_PATH . '/build/blocks-manifest.php' );
 	} else {
-		// Fallback: Register the block directly from block.json.
-		register_block_type( COVER3D_PATH . '/build/book' );
+		// Fallback for WordPress 6.4-6.6.
+		if ( function_exists( 'wp_register_block_metadata_collection' ) ) {
+			wp_register_block_metadata_collection( COVER3D_PATH . '/build', COVER3D_PATH . '/build/blocks-manifest.php' );
+		}
+
+		// Iterate over blocks in the manifest and register each one.
+		$cover3d_manifest_data = require COVER3D_PATH . '/build/blocks-manifest.php';
+		foreach ( array_keys( $cover3d_manifest_data ) as $cover3d_block_type ) {
+			register_block_type( COVER3D_PATH . "/build/{$cover3d_block_type}" );
+		}
 	}
 
 	// Load available translations for the editor script.

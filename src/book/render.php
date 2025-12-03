@@ -16,15 +16,17 @@
 // Prevent direct access.
 defined( 'ABSPATH' ) || exit;
 
-/**
- * Renders the book block output.
- *
- * @param array    $cover3d_attributes Block attributes.
- * @param string   $cover3d_content    Block default content.
- * @param WP_Block $cover3d_block      Block instance.
- * @return string The rendered block HTML.
- */
-function cover3d_render_book_block( $cover3d_attributes, $cover3d_content, $cover3d_block ) {
+// Only define the function once to avoid redefinition errors when multiple blocks are rendered.
+if ( ! function_exists( 'cover3d_render_book_block' ) ) {
+	/**
+	 * Renders the book block output.
+	 *
+	 * @param array    $cover3d_attributes Block attributes.
+	 * @param string   $cover3d_content    Block default content.
+	 * @param WP_Block $cover3d_block      Block instance.
+	 * @return string The rendered block HTML.
+	 */
+	function cover3d_render_book_block( $cover3d_attributes, $cover3d_content, $cover3d_block ) {
 	// Define a unique ID for the block.
 	$cover3d_block_id = wp_unique_id( 'cover3d-' );
 
@@ -37,7 +39,13 @@ function cover3d_render_book_block( $cover3d_attributes, $cover3d_content, $cove
 	// Get attributes with defaults.
 	$cover3d_book_link        = $cover3d_attributes['bookCoverLink'] ?? array( 'url' => '', 'opensInNewTab' => false );
 	$cover3d_book_size        = $cover3d_attributes['bookSize'] ?? 'big';
-	$cover3d_back_cover_text  = $cover3d_attributes['backCoverText'] ?? __( 'Download', 'cover3d' );
+	$cover3d_back_cover_text  = $cover3d_attributes['backCoverText'] ?? 'Download';
+
+	// Translate the default back cover text if it matches the English default.
+	// This ensures proper i18n when users save the block without changing the default value.
+	if ( 'Download' === $cover3d_back_cover_text ) {
+		$cover3d_back_cover_text = __( 'Download', 'cover3d' );
+	}
 	$cover3d_back_cover_icon  = $cover3d_attributes['backCoverIconType'] ?? 'download';
 	$cover3d_back_cover_color = $cover3d_attributes['backCoverColor'] ?? '#ffffff';
 	$cover3d_back_cover_bkg   = $cover3d_attributes['backCoverBkgColor'] ?? '#0049ff';
@@ -196,7 +204,8 @@ function cover3d_render_book_block( $cover3d_attributes, $cover3d_content, $cove
 </div>
 	<?php
 	return ob_get_clean();
-}
+	}
+} // End if function_exists.
 
 // Call the render function and output its result.
 // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- Function returns escaped HTML.
