@@ -1,8 +1,12 @@
+# Portuguese (Brazil) translation for Cover3D
+# Copyright (C) 2025 Márcio Duarte
+# This file is distributed under the GPL v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: 3D Cover\n"
-"POT-Creation-Date: 2023-10-26 18:05-0300\n"
-"PO-Revision-Date: 2023-10-26 18:05-0300\n"
+"Project-Id-Version: Cover3D 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/cover3d\n"
+"POT-Creation-Date: 2025-12-04T00:10:20+00:00\n"
+"PO-Revision-Date: 2025-12-04 00:15-0300\n"
 "Last-Translator: Márcio Duarte <contato@uberfacil.com>\n"
 "Language-Team: Márcio Duarte <contato@uberfacil.com>\n"
 "Language: pt_BR\n"
@@ -10,251 +14,156 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Poedit 3.4.1\n"
-"X-Poedit-Basepath: ..\n"
-"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
-"X-Poedit-WPHeader: cover3d.php\n"
-"X-Poedit-SourceCharset: UTF-8\n"
-"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
-"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
-"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
-"X-Poedit-SearchPath-0: .\n"
-"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+"X-Generator: WP-CLI 2.11.0\n"
+"X-Domain: cover3d\n"
 
-#: blocks/book/book.js:26 blocks/book/book_register.php:4
-msgid "3D Book Cover"
-msgstr "Capa de Livro 3D"
-
-#: blocks/book/book.js:27 blocks/book/book_register.php:5
-msgid "A 3D book cover animated on hover."
-msgstr "Uma capa de livro 3D animada ao passar o mouse."
-
-#: blocks/book/book.js:30
-msgid "book"
-msgstr "Livro"
-
-#: blocks/book/book.js:30
-msgid "cover"
-msgstr "capa"
-
-#: blocks/book/book.js:30
-msgid "3D"
-msgstr "3D"
-
-#: blocks/book/book.js:30
-msgid "animated"
-msgstr "animada"
-
-#: blocks/book/book.js:30
-msgid "hover"
-msgstr "Houver"
-
-#: blocks/book/book.js:30
-msgid "lead magnet"
-msgstr "isca digital"
-
-#: blocks/book/book.js:43 blocks/book/book.js:120
-#: blocks/book/book_register.php:26
-msgid "Download"
-msgstr "Baixar"
-
-#: blocks/book/book.js:92
-msgid "Block properties"
-msgstr "Propriedades do bloco"
-
-#: blocks/book/book.js:98
-msgid "Book size"
-msgstr "Tamanho do livro"
-
-#: blocks/book/book.js:102
-msgid "Big"
-msgstr "Grande"
-
-#: blocks/book/book.js:103
-msgid "Medium"
-msgstr "Média"
-
-#: blocks/book/book.js:104
-msgid "Small"
-msgstr "Pequena"
-
-#: blocks/book/book.js:109
-msgid ""
-"Enter the short text that will appear on the back cover on hover (only "
-"displayed with linked covers and for large and medium sizes)."
-msgstr ""
-"Digite o texto curto que aparecerá na contracapa ao passar o mouse (exibido "
-"apenas com capas vinculadas e para tamanhos grandes e médios)."
-
-#: blocks/book/book.js:110
-msgid "Back cover text"
-msgstr "Texto da contracapa"
-
-#: blocks/book/book.js:116
-msgid "Back cover icon"
-msgstr "Ícone da contracapa"
-
-#: blocks/book/book.js:121 blocks/book/book_register.php:46
-msgid "Buy"
-msgstr "Comprar"
-
-#: blocks/book/book.js:124
-msgid "Back cover color"
-msgstr "Cor da contracapa"
-
-#: blocks/book/book.js:126
-msgid "Back cover background"
-msgstr "Fundo da contracapa"
-
-#: blocks/book/book.php:19
-msgid "Cover image"
-msgstr "Imagem de Capa"
-
-#: blocks/book/book.php:146
-#, php-format
-msgid "%s"
-msgstr "%s"
-
-#: blocks/pg-blocks-controls.js:98
-msgid "No posts selected"
-msgstr "Nenhum post selecionado"
-
-#: blocks/pg-blocks-controls.js:107
-msgid "Select a "
-msgstr "Selecionar um "
-
-#: blocks/pg-blocks-controls.js:118
-msgid "Deselect post"
-msgstr "Desmarcar postagem"
-
-#: blocks/pg-blocks-controls.js:146 blocks/pg-blocks-controls.js:620
-msgid "Select a post"
-msgstr "Selecione um post"
-
-#: blocks/pg-blocks-controls.js:259
-msgid "Select an image"
-msgstr "Selecione uma imagem"
-
-#: blocks/pg-blocks-controls.js:301
-msgid "Set inline SVG"
-msgstr "Definir SVG em linha"
-
-#: blocks/pg-blocks-controls.js:308 blocks/pg-blocks-controls.js:316
-msgid "Replace image"
-msgstr "Substituir imagem"
-
-#: blocks/pg-blocks-controls.js:333
-msgid "Edit SVG"
-msgstr "Editar SVG"
-
-#: blocks/pg-blocks-controls.js:340
-msgid "Remove image"
-msgstr "Remover imagem"
-
-#: blocks/pg-blocks-controls.js:373
-msgid "Paste or edit the SVG image code."
-msgstr "Cole ou edite o código da imagem SVG."
-
-#: blocks/pg-blocks-controls.js:374
-msgid "Edit inline SVG"
-msgstr "Editar SVG em linha"
-
-#: blocks/pg-blocks-controls.js:390
-msgid "Close"
-msgstr "Fechar"
-
-#: blocks/pg-blocks-controls.js:399
-msgid "Cancel"
-msgstr "Cancelar"
-
-#: blocks/pg-blocks-controls.js:428
-msgid "Select color"
-msgstr "Escolher cor"
-
-#: blocks/pg-blocks-controls.js:449
-msgid "Clear"
-msgstr "Limpar"
-
-#: blocks/pg-blocks-controls.js:527
-msgid "Select link"
-msgstr "Selecionar link"
-
-#: blocks/pg-blocks-controls.js:557
-msgid "×"
-msgstr "×"
-
-#: blocks/pg-blocks-controls.js:583
-msgid "Post type"
-msgstr "Tipo de postagem"
-
-#: blocks/pg-blocks-controls.js:813
-msgid "Block rendered as empty."
-msgstr "Bloco processado como vazio."
-
-#. translators: %s: error message describing the problem
-#: blocks/pg-blocks-controls.js:819
-#, javascript-format
-msgid "Error loading block: %s"
-msgstr "Erro ao carregar bloco: %s"
-
-#. Plugin Name of the plugin/theme
+#. Plugin Name of the plugin
+#: cover3d.php
 msgid "Cover3D"
-msgstr "Capa3D"
+msgstr "Cover3D"
 
-#. Plugin URI of the plugin/theme
+#. Plugin URI of the plugin
+#: cover3d.php
 msgid "https://github.com/EpicoStudio/cover3d"
 msgstr "https://github.com/EpicoStudio/cover3d"
 
-#. Description of the plugin/theme
+#. Description of the plugin
+#: cover3d.php
 msgid "A block that displays a 3D book cover, animated when you mouse over it."
-msgstr ""
-"Um bloco que exibe uma capa de livro em 3D, com uma animação que é ativada "
-"você passa o mouse sobre ela."
+msgstr "Um bloco que exibe uma capa de livro em 3D, animada ao passar o mouse sobre ela."
 
-#. Author of the plugin/theme
+#. Author of the plugin
+#: cover3d.php
 msgid "Márcio Duarte"
 msgstr "Márcio Duarte"
 
-#. Author URI of the plugin/theme
+#. Author URI of the plugin
+#: cover3d.php
 msgid "https://epico.studio"
 msgstr "https://epico.studio"
 
-#~ msgid "Book cover image"
-#~ msgstr "Imagem de capa"
+#: src/book/render.php:47
+#: src/book/edit.js:243
+msgid "Download"
+msgstr "Baixar"
 
-#~ msgid "Add your book cover image."
-#~ msgstr "Adicione a imagem da capa de seu livro."
+#: src/book/render.php:53
+#: src/book/edit.js:132
+msgid "Cover image"
+msgstr "Imagem de capa"
 
-#~ msgid "Book cover link"
-#~ msgstr "Link da capa"
+#: src/book/edit.js:72
+msgid "Book cover link"
+msgstr "Link da capa do livro"
 
-#~ msgid ""
-#~ "Add an optional link to the book (to download or buy). Adding a link will "
-#~ "trigger the hover animation to show the back cover."
-#~ msgstr ""
-#~ "Adicione um link opcional para o livro (para fazer download, comprar ou "
-#~ "qualquer outra coisa). A adição de um link acionará a animação de passar "
-#~ "o mouse para mostrar a contracapa."
+#: src/book/edit.js:73
+msgid "Add an optional link to the book (to download, buy, or whatever). Adding a link will trigger the hover animation to show the back cover."
+msgstr "Adicione um link opcional para o livro (para baixar, comprar ou qualquer outra coisa). A adição de um link acionará a animação de passar o mouse para mostrar a contracapa."
 
-#~ msgid "Big cover"
-#~ msgstr "Capa grande"
+#: src/book/edit.js:86
+msgid "Open in new tab"
+msgstr "Abrir em nova aba"
 
-#, fuzzy
-#~| msgid "Big cover"
-#~ msgid "Retina cover"
-#~ msgstr "Capa grande"
+#: src/book/edit.js:149
+msgid "Replace image"
+msgstr "Substituir imagem"
 
-#~ msgid "https://example.com/plugins/the-basics/"
-#~ msgstr "https://example.com/plugins/the-basics/"
+#: src/book/edit.js:159
+msgid "Remove image"
+msgstr "Remover imagem"
 
-#~ msgid "Describe what the plugin does."
-#~ msgstr "Descreva o que o plugin faz."
+#: src/book/edit.js:167
+msgid "Select cover image"
+msgstr "Selecionar imagem da capa"
 
-#~ msgid "John Smith"
-#~ msgstr "João da Silva"
+#: src/book/edit.js:176
+msgid "Alt text"
+msgstr "Texto alternativo"
 
-#~ msgid "https://author.example.com/"
-#~ msgstr "https://author.example.com/"
+#: src/book/edit.js:181
+msgid "Describe the book cover image for accessibility."
+msgstr "Descreva a imagem da capa do livro para acessibilidade."
 
-#~ msgid "A 3D book cover animated on hover"
-#~ msgstr "Uma capa de livro 3D animada ao passar o mouse"
+#: src/book/edit.js:192
+msgid "Block settings"
+msgstr "Configurações do bloco"
+
+#: src/book/edit.js:203
+msgid "Book size"
+msgstr "Tamanho do livro"
+
+#: src/book/edit.js:209
+msgid "Big"
+msgstr "Grande"
+
+#: src/book/edit.js:212
+msgid "Medium"
+msgstr "Médio"
+
+#: src/book/edit.js:214
+msgid "Small"
+msgstr "Pequeno"
+
+#: src/book/edit.js:221
+msgid "Back cover text"
+msgstr "Texto da contracapa"
+
+#: src/book/edit.js:226
+msgid "Enter the short text that will appear on the back cover on hover (only displayed with linked covers and for large and medium sizes)."
+msgstr "Digite o texto curto que aparecerá na contracapa ao passar o mouse (exibido apenas com capas vinculadas e para tamanhos grande e médio)."
+
+#: src/book/edit.js:235
+msgid "Back cover icon"
+msgstr "Ícone da contracapa"
+
+#: src/book/edit.js:245
+msgid "Buy"
+msgstr "Comprar"
+
+#: src/book/edit.js:252
+msgid "Back cover color"
+msgstr "Cor da contracapa"
+
+#: src/book/edit.js:260
+msgid "Back cover background"
+msgstr "Fundo da contracapa"
+
+#: src/book/block.json
+msgctxt "block title"
+msgid "3D Book Cover"
+msgstr "Capa de Livro 3D"
+
+#: src/book/block.json
+msgctxt "block description"
+msgid "A 3D book cover animated on hover."
+msgstr "Uma capa de livro 3D animada ao passar o mouse."
+
+#: src/book/block.json
+msgctxt "block keyword"
+msgid "book"
+msgstr "livro"
+
+#: src/book/block.json
+msgctxt "block keyword"
+msgid "cover"
+msgstr "capa"
+
+#: src/book/block.json
+msgctxt "block keyword"
+msgid "3D"
+msgstr "3D"
+
+#: src/book/block.json
+msgctxt "block keyword"
+msgid "animated"
+msgstr "animada"
+
+#: src/book/block.json
+msgctxt "block keyword"
+msgid "hover"
+msgstr "hover"
+
+#: src/book/block.json
+msgctxt "block keyword"
+msgid "lead magnet"
+msgstr "isca digital"
