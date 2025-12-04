@@ -150,8 +150,14 @@ if ( ! function_exists( 'cover3d_render_book_block' ) ) {
 	?>
 <div <?php echo $cover3d_wrapper_attributes; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- get_block_wrapper_attributes() returns escaped output. ?>>
 	<style>
-		<?php echo esc_html( 'buy' === $cover3d_back_cover_icon ? wp_strip_all_tags( $cover3d_buy_icon ) : wp_strip_all_tags( $cover3d_download_icon ) ); ?>
-		<?php echo esc_html( wp_strip_all_tags( $cover3d_color_styles ) ); ?>
+		<?php
+		// phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- CSS output, escaped via wp_strip_all_tags() which removes any HTML/script injection.
+		echo 'buy' === $cover3d_back_cover_icon ? wp_strip_all_tags( $cover3d_buy_icon ) : wp_strip_all_tags( $cover3d_download_icon );
+		?>
+		<?php
+		// phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- CSS output, escaped via wp_strip_all_tags() which removes any HTML/script injection.
+		echo wp_strip_all_tags( $cover3d_color_styles );
+		?>
 	</style>
 	<div class="book-cover-wrapper">
 		<?php if ( $cover3d_has_link ) : ?>
